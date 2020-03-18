@@ -33,6 +33,10 @@ html::-webkit-scrollbar {
   max-width: 600px;
 }
 
+.link{
+  color: #a63725;
+}
+
 .image {
   grid-area: image;
   margin-top: 24px;
