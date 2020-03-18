@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160715391-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-160715391-1");
+  </script>
+  <link rel="stylesheet" media="screen" href="../../css/stylesheet.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Heebo&display=swap" rel="stylesheet" />
+  <title>Lyf Pay UX Case Study • Arthur Abia</title>
+</head>
+
+<body class="wrapper">
+  <nav class="header">
+    <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+    <label for="menu-checkbox" class="menu-toggle">≡</label>
+    <ul class="menu">
+      <li><a href="../Homepage Arthur Abia UX Researcher/index.html" class="largetext">home</a><a href="../Homepage Arthur Abia UX Researcher/index.html"
+              class="smalltext">home page</a></li>
+      <li><a href="../Homepage Arthur Abia UX Researcher/index.html" class="largetext">resume</a><a href="../Homepage Arthur Abia UX Researcher/index.html"
+              class="smalltext">download resume</a></li>
+      <li><a href="../About me Arthur Abia User Researcher/index.html" class="largetext">about</a><a href="../About me Arthur Abia User Researcher/index.html"
+              class="smalltext">about me</a></li>
+  </ul>
+  </nav>
+  <div class="name">
+    <h1 class="title">
+      Implementing a Dematerialised Meal Voucher: a UX Case Study
+    </h1>
+  </div>
+  <div class="content wording">
+    <h2>Context</h2>
+    <p>
+      One of the first projects I took in my Lyf Pay Experience, I had to take
+      part in integrating a new payment method: the meal voucher, or as we
+      French call it: <em>a &quot;ticket restaurant&quot;.</em>
+    </p>
+
+    <p>
+      The goal of this project was simple:
+      <span class="bold"> implement a feature</span> allowing users to pay
+      within the app using the meal voucher alone or combined with another
+      payment card, depending on their situation.
+    </p>
+    <p class="legend">
+      <b>Role </b>: One-man UX Research team, worked closely to Anne-Laure
+      Donzé (Product Owner) &amp; Naama Bassan (Design Lead) <br />
+      <b>Methodology </b>: Internal Survey, Wireframe, Prototype, User
+      Testing, Guerilla testing <br />
+      <b>Tools</b> : Google Forms, Typeform, Figma, Marvel, Notion <br />
+      <b>Time </b>: Approx. 4 months<br />
+    </p>
+    <h2>Understanding the topic</h2>
+    <p>
+      To understand the context,
+      <span class="bold"> we have to know how the meal voucher works</span>
+      :<br /><br />
+      • First, the meal voucher in this context is a debit card. You can use
+      it contactless or with a code, which is provided you via an external
+      application,
+      <span class="bold">that may or may not have been properly configured</span>. <em>That's pain point
+        n°1.</em><br /><br />
+      • On this card, you are given a monthly meal allowance, the amount
+      depending on your work contract. To know how much money you have left
+      each day/month,
+      <span class="bold">you have to check on the external application mentioned earlier</span>
+      <em>There's pain point n°2.</em><br /><br />
+      • You can use this card only to buy food or groceries. As a result, most
+      restaurants will accept it, but <em>some</em> supermarkets will as well,
+      though <span class="bold">you can't know in advance which ones</span>.
+      <em>That's pain point n°3.</em><br /><br />
+      • You can use this card for €19 max per day, but
+      <span class="bold">it doesn't work on Sundays and bank holidays</span>,
+      because you are <em>supposed</em> to use it on your working days.
+      <em>And that's pain point n°4.</em><br /><br />
+    </p>
+    <p>
+      There are lots of things to consider about this card, so I wanted to
+      know from the very start how people used it. So I went away and asked
+      people. How?
+      <span class="highlight">
+        By running a survey on my very own colleagues.</span>
+    </p>
+    <h2>Surveying your own people</h2>
+    <p>
+      <em>Yes, I did</em> primary research
+      <em>on my very own colleagues and not the final users.</em><br />
+      Why did I do that?<br />
+
+      Only because
+      <span class="highlight">
+        I did not ask questions about any interface</span>, but just about <em>the habits</em> of using a product that
+      we were
+      actually using. So in a way, my colleagues <em>were</em> final users.
+      <br />
+      That way,
+      <span class="bold">I got over 50 answers in less than 2 days</span>, so
+      I could start and gather insights straight away. I would definitely do
+      it again if given the choice! I had a few hypotheses:
+    </p>
+    <br />
+    <p>
+      • People used it <span class="bold">mostly for lunch</span> every day
+      but not that much for buying groceries.<br /><br />
+      • People
+      <span class="bold">didn't use often the external application</span>, so
+      they didn't check often their remaining allowance.<br /><br />
+      • The meal voucher is not considered as part of the bank account and
+      <span class="bold">is not accounted in people's budget as such.</span><br /><br />
+    </p>
+    <p>Here is a summary of what I've found.</p>
+    <img class="illu" src="../../assets/images/Implementing a Dematerialised Meal Voucher a UX Ca/Frame_20.jpg"
+      alt="Implementing%20a%20Dematerialised%20Meal%20Voucher%20a%20UX%20Ca/Frame_20.jpg" />
+    <div class="caption legend">
+      Answers about the meal voucher use (48 participants)
+    </div>
+    <p>
+      This data tells us there is a potential pain point in checking this
+      information, in which our app could be useful!<br />
+      It also shows that
+      <span class="bold">payments should be presented differently according to the card used
+        to reflect the underyling mental models</span>, as budgeting was not conceptualized the same way for all cards.
+      <br />
+      With all that in mind, we can start to imagine what would be a pleasant
+      experience for Lyf Pay users.
+      <span class="highlight"><br />And so, I went on my way, did some quick prototypes and did my
+        first user testing session on the topic.</span>
+
+    </p>
+    <h2>Going Guerilla</h2>
+    <p>
+      For this session, I went guerilla mostly because I didn't have a
+      complete user flow to test but just a few screens and
+      <span class="bold">I needed insights quickly to move on with the project</span>.
+    </p>
+    <img class="illu" src="../../assets/images/Implementing a Dematerialised Meal Voucher a UX Ca/Frame_24.jpg"
+      alt="Implementing%20a%20Dematerialised%20Meal%20Voucher%20a%20UX%20Ca/Frame_24.jpg" />
+    <div class="caption legend">
+      Paper wireframe of the Card Selector interaction
+    </div>
+    <img class="illu" src="../../assets/images/Implementing a Dematerialised Meal Voucher a UX Ca/Frame_14.jpg"
+      alt="Implementing%20a%20Dematerialised%20Meal%20Voucher%20a%20UX%20Ca/Frame_14.jpg" />
+    <div class="caption legend">
+      Digital wireframe of the same Card Selector interaction
+    </div>
+    <p>
+      With hindsight, I realize now that I also wanted to try guerilla
+      testing, because I was eager to try new methodologies. But isn't it part
+      of the job to also try new methodologies while doing research?
+    </p>
+    <p>
+      On top of that, in-house user testing can take 1-2 weeks from planning
+      to doing, guerilla can be done in a day. The main drawback was that
+      <span class="bold">there was NO way to know if people were users of the meal
+        voucher</span>, or if they even knew it at all.
+    </p>
+    <p>
+      <span class="highlight">I got my 5 participants after only one hour of testing, and by the
+        time I was done</span>, we already got a lot to improve before the next round of testing.
+    </p>
+    <p>
+      Guerilla testing is excellent for assessing basic understanding. Even if
+      your testers don't know about a concept or feature,
+      <span class="bold">they will try to wrap their mind around it </span>and
+      can at least make some pretty good educated guesses about something they
+      might have heard of. It can, therefore, be useful to use guerilla
+      testing if your resources are limited, before a more thorough round of
+      user testing with your final users.
+    </p>
+    <h2>Testing some more</h2>
+    <p>
+      So, when screens were refined, we got to make the whole user flows, from
+      sign up to finish. That is when I did proper recruiting, specifically
+      looking for people <strong>using the meal voucher</strong> and
+      <strong>not our application</strong>.
+    </p>
+    <img class="illu" src="../../assets/images/Implementing a Dematerialised Meal Voucher a UX Ca/Frame_23.jpg"
+      alt="Implementing%20a%20Dematerialised%20Meal%20Voucher%20a%20UX%20Ca/Frame_23.jpg" />
+    <div class="caption legend">User tests flow</div>
+    <img class="illu" src="../../assets/images/Implementing a Dematerialised Meal Voucher a UX Ca/Frame_22.jpg"
+      alt="Implementing%20a%20Dematerialised%20Meal%20Voucher%20a%20UX%20Ca/Frame_22.jpg" />
+    <div class="caption legend">
+      UI wireframes for User tests (Card Selector, Card Screen and Payment
+      Screen)
+    </div>
+    <p>
+      <span class="highlight">And after another a few rounds of testing with 12 participants, this
+        is what I got:</span><br /><br />
+      •
+      <span class="bold">Most users could intuitively add their meal voucher in the app</span>, and the info displayed
+      was easily understood.<br /><br />
+      •
+      <span class="bold">The screen payment and the &quot;multi-payment&quot; feature were
+        easily understood</span>, but some improvement could be made on the card selector.<br /><br />
+      • <span class="bold">Error messages could be improved</span> and sending
+      specific notifications could improve the experience.<br /><br />
+      • The overall experience was satisfying and
+      <span class="bold">participants were eager to try the feature</span>,
+      which is always a good sign!
+    </p>
+    <img class="illu" src="../../assets/images/Implementing a Dematerialised Meal Voucher a UX Ca/Frame_25.jpg"
+      alt="Implementing%20a%20Dematerialised%20Meal%20Voucher%20a%20UX%20Ca/Frame_25.jpg" />
+    <div class="caption legend">Card Selector before User Tests</div>
+    <img class="illu" src="../../assets/images/Implementing a Dematerialised Meal Voucher a UX Ca/Frame_26.jpg"
+      alt="Implementing%20a%20Dematerialised%20Meal%20Voucher%20a%20UX%20Ca/Frame_26.jpg" />
+    <div class="caption legend">Card Selector after User Tests</div>
+    <h2>Wrapping up</h2>
+    <p>
+      Overall, this project was a great experience, in solving the right
+      method at the right time of the project and framing questions.
+      <span class="bold">It was also very gratifying being involved in the research phase of
+        the feature</span>, and to play a part in building the best implementation possible.
+    </p>
+    <p>
+      What I especially liked was<span class="bold">
+        trying different methodologies, starting from the survey to learn
+        about mental models we might not have discovered, and design screens
+        based on those models</span>. Then, testing prototypes with two different types of user testing
+      gave us a better understanding of the context we were going into and
+      helped us shape this feature the way it is now.
+    </p>
+    <p>
+      Want to read more ? Here's one about the work I did on Lyf Pay redesign.
+    </p>
+  </div>
+  <p class="footer">
+    Made by me, using <a href="https://www.11ty.dev/">eleventy</a>.
+  </p>
+</body>
+
+</html>
