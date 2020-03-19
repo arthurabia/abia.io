@@ -294,6 +294,12 @@ top:-1em;
     min-height: 100%;
   }
 
+
+  .wording{
+    max-width: 90%;
+    line-height: 100%;
+  }
+
   .menu {
     visibility: hidden;
     opacity: 0;
