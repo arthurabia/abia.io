@@ -300,6 +300,10 @@ top:-1em;
     line-height: 100%;
   }
 
+  .center{
+    text-align:center;
+  }
+
   .menu {
     visibility: hidden;
     opacity: 0;
