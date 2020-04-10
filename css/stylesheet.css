@@ -1,3 +1,10 @@
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   scrollbar-width: none; 
   -ms-overflow-style: none;
@@ -5,6 +12,17 @@ html {
 
 html::-webkit-scrollbar {
   width: 0px;
+}
+
+.project-title{
+  font-weight: 600;
+  font-size: 24px;
+  margin : 0.7em 1em 0.3em 0em;
+}
+
+.project-description{
+  font-size: 18px;
+  color: #57514D;
 }
 
 
@@ -224,7 +242,8 @@ top:-1em;
   grid-area: content;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-row-gap: 1em;
+  grid-row-gap: 3em;
+  grid-column-gap: 1em;
   margin-top: 3em;
   max-width: 100%;
   grid-auto-flow: column;
@@ -233,7 +252,6 @@ top:-1em;
 .card {
   max-width: 85%;
   height: auto;
-  border: 3px #a63725 solid;
   font-size: 15px;
   font-style: italic;
   font-family: "Bitter", "Lato", "Heebo", -apple-system, "SF Pro Display",
@@ -253,10 +271,10 @@ top:-1em;
 }
 
 .card:hover {
-  transform: translate(0, -3px);
+
   color: #a63725;
-  transition: all 0.15s ease-in-out;
-  border: 3px #a63725 solid;
+
+
 }
 
 .card:hover.not{
@@ -271,6 +289,7 @@ top:-1em;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  border-radius: 12px;
 }
 
 
@@ -283,8 +302,10 @@ top:-1em;
 }
 
 .card-image:hover {
-  filter: contrast(1);
-  -webkit-filter: contrast(1.1);
+  transform: translate(0, -6px);
+  filter: contrast(1.09);
+  -webkit-filter: contrast(1.09);
+  transition: all 0.3s ease-in-out;
 }
 
 .card-image:hover.not {
@@ -298,7 +319,6 @@ top:-1em;
 }
 
 .card-caption {
-  margin: 1em;
   min-width: 110px;
 }
 
@@ -381,7 +401,7 @@ top:-1em;
   .wrapper {
     display: grid;
     grid-template-columns: 0.25fr 4fr 0.25fr;
-    grid-row-gap: 18px;
+    grid-row-gap: 30px;
     grid-template-areas: ". header ." ". image ." ". name ." ". content ." ". footer .";
   }
 
@@ -392,14 +412,24 @@ top:-1em;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-column-gap: 0.5em;
-    grid-row-gap: 0.5em;
+    grid-row-gap: 1em;
     margin-top: 1em;
     grid-auto-flow: unset;
   }
 
+  .project-title{
+    font-weight: 600;
+    font-size: 24px;
+    margin : 0.7em 1em 0.3em 0em;
+  }
+
+  .project-description{
+    font-size: 18px;
+    color: #57514D;
+  }
+
   .card {
     max-width: 100%;
-    border: 3px #a63725 solid;
     font-size: 15px;
     font-style: italic;
     font-family: "Bitter", "Lato", "Heebo", -apple-system, "SF Pro Display",
@@ -419,7 +449,6 @@ top:-1em;
     transform: translate(0, -1px);
     color: #a63725;
     transition: all 0.15s ease-in-out;
-    border: 3px #E38F82 solid;
   }
 
   .card-image {
@@ -429,7 +458,7 @@ top:-1em;
   }
 
   .card-caption {
-    margin: 0.8em;
+    margin: 0.8em 1em 1em 0em;
   }
 
   .footer {
