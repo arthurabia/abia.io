@@ -17,7 +17,7 @@ html::-webkit-scrollbar {
 .project-title{
   font-weight: 600;
   font-size: 24px;
-  margin : 0.7em 1em 0.3em 0em;
+  margin : 0.5em 1em 0.3em 0em;
 }
 
 .project-description{
@@ -190,7 +190,7 @@ p {
 }
 
 .highlight {
-  background-color: #82D6E3;
+  background-color: #B1F4FF;
   font-weight: 500;
 }
 
@@ -266,7 +266,7 @@ top: 0.25em;
   height: auto;
   font-size: 15px;
   font-style: italic;
-  font-family: "Bitter", "Lato", "Heebo", -apple-system, "SF Pro Display",
+  font-family: "Heebo", "Lato", "Bitter", -apple-system, "SF Pro Display",
     "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 128%;
   background: #fff8f2;
@@ -445,7 +445,7 @@ top: 0.25em;
     max-width: 100%;
     font-size: 15px;
     font-style: italic;
-    font-family: "Bitter", "Lato", "Heebo", -apple-system, "SF Pro Display",
+    font-family: "Heebo", "Lato", "Bitter", -apple-system, "SF Pro Display",
       "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     line-height: 128%;
     background: #fff8f2;
