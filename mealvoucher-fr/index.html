@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <meta name="description" content="Bonjour ! This is a UX Research case study from Arthur Abia Portoflio, about mobile payment."/>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160715391-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-160715391-1");
+  </script>
+  <link rel="stylesheet" media="screen" href="../css/stylesheet.css" type="text/css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png"/>
+  <meta name="description" content="Hi ! This is Arthur Abia Portoflio, a french UX Researcher based in Montréal, QC."/>
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Heebo&display=swap" rel="stylesheet" />
+  <title> 🚀Arthur Abia, UX Researcher</title>
+</head>
+
+<body class="wrapper">
+  <nav class="header">
+    <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+    <label for="menu-checkbox" class="menu-toggle">≡</label>
+    <ul class="menu">
+      <li><a href="../home-fr/" class="largetext">projets</a><a href="../home-fr/"
+        class="smalltext">aller à l'accueil</a></li>
+  <li><a href="../assets/Arthur Abia - Resumefr.pdf" target="blank" class="largetext">CV</a><a href="../assets/Arthur Abia - Resumefr.pdf"
+          class="smalltext" target="blank">télécharger mon CV</a></li>
+  <li><a href="../about-fr/" class="largetext">à propos</a><a href="../about-fr/"
+    class="smalltext">à propos</a></li>
+  <li><a href="../mealvoucher/" class="largetext">english</a><a href="../mealvoucher/"
+      class="smalltext">see in english</a></li>   
+  </ul>
+  </nav>
+  <div class="name">
+    <h1 class="title">
+      🍽️<br>Implémentation d'un carte titres restaurant 100% digitale
+    </h1>
+  </div>
+  <div class="content wording">
+    <h2>Contexte</h2>
+    <p>
+      Pour l'un des premiers projets que j'ai entrepris dans le cadre de mon expérience chez Lyf Pay, 
+      j'ai assisté à l'intégration d'un nouveau mode de paiement au sein de l'app : <em>la carte titres restaurant</em>.
+    </p>
+
+    <p>
+      L'objectif de ce projet était simple : 
+      <span class="bold"> mettre en place une fonctionnalité </span>permettant aux utilisateurs de payer avec l'application en utilisant 
+      leur carte ticket-restaurant seule ou combinée avec une autre carte de paiement.
+    </p>
+    <p class="legend">
+      <b>Rôle </b>: Réalisation de l'ensemble de la recherche utilisateur, 
+      travaillant en étroite collaboration avec Anne-Laure Donzé (Product Owner) & Naama Bassan (Design Lead) <br />
+      <b>Méthodologie </b>: Questionnaire, prototypage, test utilisateurs, test guerilla<br />
+      <b>Outils</b> : Google Forms, Typeform, Figma, Marvel, Notion <br />
+      <b>Durée </b>: Environ 4 mois<br />
+    </p>
+    <h2>Compréhension du sujet</h2>
+    <p>
+      Pour comprendre le contexte,
+      <span class="bold"> il faut identifier les points bloquants liés à la carte titres restaurant</span>
+      :<br /><br />
+      • Tout d'abord, vous pouvez utiliser la carte en paiement sans-contact ou avec un code, qui vous est fourni par une application externe, 
+        <span class="bold">qui peut ne pas avoir été correctement configurée en amont.</span> <em>(Point bloquant n°1)</em><br /><br />
+      • Sur cette carte, vous recevez une indemnité de repas mensuelle, dont le solde dépend de votre contrat de travail. 
+      Pour savoir combien d'argent il vous reste chaque jour/mois, 
+      <span class="bold">vous devez vérifier l'application externe mentionnée plus haut</span> <em>(Point bloquant n°2)</em><br /><br />
+      • Vous ne pouvez utiliser cette carte que pour acheter de la nourriture. Par conséquent, la plupart des restaurants l'accepteront, 
+      et certains supermarchés aussi, <span class="bold">mais vous ne pouvez pas savoir à l'avance lesquels</span>. <em>(Point bloquant n°3)</em><br /><br />
+      • Vous pouvez utiliser cette carte <span class="bold">pour 19€ maximum par jour</span>, 
+      mais elle ne fonctionne pas les dimanches et jours fériés, car vous êtes censé l'utiliser les jours ouvrables. <em>(Point bloquant n°4)</em><br /><br />
+    </p>
+    <p>
+        Il y a beaucoup de choses à prendre en compte à propos de cette fameuse carte, donc je 
+        voulais savoir dès le début comment les gens l'utilisaient. 
+        lors j'ai fait la seule chose logique et j'ai demandé aux gens. Comment ? <span class="highlight">En réalisant une enquête auprès de mes propres collègues.</span>
+    </p>
+    <h2>Sondage auprès de collaborateurs</h2>
+    <p>
+      <em>Yes, I did</em> primary research
+      <em>on my very own colleagues and not the final users.</em><br />
+      <em>Oui, j'ai fait de la recherche utilisateur sur mes propres collègues</em> et non sur les utilisateurs finaux.<br />
+      Mais pourquoi donc ?<br />
+
+      Principalement parce que 
+      <span class="highlight">
+      je n'ai pas posé de questions sur une interface en particulier</span>, mais sur <em>les habitudes</em> 
+      d'utilisation d'un produit, que nous utilisions réellement. Donc, d'une certaine manière, mes collègues <em>étaient</em> 
+      des utilisateurs finaux.
+      <br />
+      De cette manière, <span class="bold">j'ai obtenu plus de 50 réponses en moins de deux jours</span>, 
+      ce qui m'a permis de commencer et de recueillir des retours immédiatement. 
+      Je le referais certainement de la même manière si c'était à refaire ! J'avais quelques hypothèses :
+    </p>
+    <br />
+    <p>
+      • Les testeurs utilisaient <span class="bold">surtout leur carte pour leur déjeuner quotidien</span>, et peu pour faire lers courses.<br /><br />
+      • Les testeurs <span class="bold">n'utilisaient pas souvent l'application externe liée à leur carte</span>, et donc ils ne vérifiaient pas souvent leur solde restant.<br /><br />
+      • La carte titres restaurant n'était pas considérée comme faisant partie du compte bancaire 
+      et <span class="bold">n'est pas comptabilisée</span> en tant que tel dans le budget des gens.<br /><br />
+    </p>
+    <p>Voilà un résumé de ce que j'ai découvert :</p>
+    <img class="illu" src="../assets/mealvoucher/Frame_20fr.jpg"
+      alt="Graphique montrant l'usage de la carte titres restaurant" />
+    <div class="caption legend">
+      Réponse sur l'usage de la carte titres restaurant (48 participants)
+    </div>
+    <p>
+      Ces données nous indiquent qu'il y a des points bloquants potentiels dans la vérification du solde restant, et que donc notre application pourrait être utile !<br />
+      Elles montrent également que
+      <span class="bold">les paiements devraient être présentés différemment selon le type carte utilisée pour coller au plus près des modèles mentaux sous-jacents</span>, 
+      car la prise en compte du budget n'a pas été conceptualisée de la même manière pour toutes les cartes bancaires.
+      <br />
+      Avec tout cela à l'esprit, nous pouvons commencer à imaginer ce que serait une expérience agréable pour les utilisateurs de Lyf Pay.
+      <span class="highlight"><br />J'ai donc poursuivi mon étude, j'ai fait quelques prototypes rapides et j'ai réalisé une première session de tests d'utilisateurs sur le sujet.</span>
+
+    </p>
+    <h2>Tests en Guerilla</h2>
+    <p>
+      Pour cette session, je suis passé en guerilla surtout parce que je n'avais pas un flux d'utilisateurs 
+      complet à tester, mais seulement quelques écrans et que <span class="bold">j'avais besoin d'avoir des idées rapidement pour avancer dans le projet</span>.
+    </p>
+    <img class="illu" src="../assets/mealvoucher/Frame_24.jpg"
+      alt="Photo de la première maquette" />
+    <div class="caption legend">
+      Première maquette de l'interaction liée au sélecteur de cartes
+    </div>
+    <img class="illu" src="../assets/mealvoucher/Frame_14.jpg"
+      alt="Capture d'écran de la même maquette, en haute fidélité" />
+    <div class="caption legend">
+      Maquette en haute fidélité du même sélecteur de cartes
+    </div>
+    <p>
+      Avec le recul, je réalise aussi que j'étais particulièrement enclin à essayer le guerilla testing, parce que je n'en avais jamais fait auparavant ! Cela ne fait-il pas partie du travail d'UX aussi d'essayer de nouvelles méthodologies tout en faisant de la recherche ?
+    </p>
+    <p>
+      De plus, les tests en présentiel peuvent prendre une à deux semaines entre la planification et la 
+      réalisation, alors qu'une session guerilla peut être faite dans la journée. 
+      Le principal inconvénient est <span class="bold">qu'il n'y a AUCUN moyen de savoir si les gens sont des utilisateurs 
+      de cartes titres restaurant</span>, ou même s'ils connaissent le concept.
+    </p>
+    <p>
+      <span class="highlight">J'ai eu mes 5 participants après seulement une heure de test</span>, et c'était suffisant pour avoir déjà beaucoup de choses à améliorer avant la prochaine série de tests.
+    </p>
+    <p>
+      Le guerilla testing est excellent pour évaluer la compréhension de base d'un écran. 
+      Même si vos testeurs ne connaissent pas un concept ou une fonctionnalité, 
+      <span class="bold">ils essaieront forcément de s'en faire une idée</span> et pourront au moins toujours faire des suppositions 
+      assez précises sur un sujet même s'ils n'en ont pas entendu parler. 
+      Il peut donc être utile de recourir à du test utilisateurs guerilla si vos ressources sont limitées, 
+      avant de procéder à une série de tests plus approfondis avec vos utilisateurs finaux.
+    </p>
+    <h2>Itération des tests utilisateurs</h2>
+    <p>
+      Lorsque les écrans ont été plus peaufinés, nous avons pu faire des tests sur 
+      l'ensemble des parcours utilisateurs, de l'inscription à la fin. C'est à ce moment-là que j'ai fait un recrutement approprié, 
+      en recherchant spécifiquement des personnes utilisant <strong>la carte titres restaurant</strong> et qui <strong>ne connaissaient pas notre application</strong>.
+    </p>
+    <img class="illu" src="../assets/mealvoucher/Frame_23fr.jpg"
+      alt="Image du parcours de tests utilisateurs" />
+    <div class="caption legend">Parcours des tests utilisateurs</div>
+    <img class="illu" src="../assets/mealvoucher/Frame_22.jpg"
+      alt="Exemples des écrans présentés lors des tests utilisateurs" />
+    <div class="caption legend">
+      Ecrans présentés pendant les tests utilisateurs (sélecteur de cartes, infos de carte et paiement)
+    </div>
+    <p>
+      <span class="highlight">Et après plusieurs séries de tests avec une dizaine participants, voilà ce que j'ai obtenu :</span><br /><br />
+      •
+      <span class="bold">La plupart des utilisateurs pouvaient intuitivement ajouter leur carte dans l'application</span>, 
+      et les informations affichées sur les différents écrans étaient facilement compréhensibles.<br><br>
+      •
+      <span class="bold">L'écran de paiement et la fonctionnalité de "multi-paiement" étaient facilement compréhensibles</span>, 
+      mais quelques améliorations ont pu être apportées au sélecteur de carte.<br /><br />
+      • 
+      <span class="bold">Les messages d'erreur pourraient être améliorés</span> 
+      et l'envoi de notifications spécifiques à l'utilisation de la carte pourrait améliorer l'expérience.
+      <br /><br />
+      • 
+      L'expérience a été globalement satisfaisante et <span class="bold">les participants étaient impatients d'essayer la fonctionnalité</span>, ce qui est toujours un bon signe !
+    </p>
+    <img class="illu" src="../assets/mealvoucher/Frame_25fr.jpg"
+      alt="Capture d'écran du sélecteur de cartes avant les tests utilisateurs" />
+    <div class="caption legend">Sélecteur de cartes avant les tests utilisateurs</div>
+    <img class="illu" src="../assets/mealvoucher/Frame_26fr.jpg"
+      alt="capture d'écran du sélecteur de cartes après les tests utilisateurs, simplifié" />
+    <div class="caption legend">Sélecteur de cartes après les tests utilisateurs</div>
+    <h2>Conclusion</h2>
+    <p>
+        Dans l'ensemble, ce projet a été une belle expérience, car il m'a permis de mettre en place 
+        la bonne méthodologie au bon moment du projet et de définir les questions nécessaires. 
+        <span class="bold">Ca aurait également été très gratifiant d'être impliqué dès les premières phases de recherche</span> et de participer à l'élaboration de la solution.
+    </p>
+    <p>
+      Ce que j'ai particulièrement apprécié, c'est d'avoir pu essayé <span class="bold">différentes méthodologies, 
+      en partant d'un questionnaire pour mieux comprendre les modèles mentaux que nous n'aurions peut-être pas découverts, 
+      et de concevoir des écrans basés sur ces modèles</span>. Ensuite, le fait de tester des prototypes avec deux types de tests utilisateurs 
+      nous a permis de mieux comprendre 
+      le contexte dans lequel nous nous trouvions et nous a aidé à façonner cette fonctionnalité telle qu'elle est aujourd'hui. :)
+    </p>
+    <p>
+      Merci pour la lecture ! Vous voulez lire ce cas ? 🛠️ //A CHANGER//
+    </p>
+  </div>
+  <p class="footer">
+    Site fait maison, avec un peu de <a href="https://www.11ty.dev/">eleventy</a>.
+  </p>
+</body>
+
+
+</html>
